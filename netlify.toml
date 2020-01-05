@@ -3,4 +3,3 @@
   to = "https://fodi.327.workers.dev"
   status = 200
   force = true
-  headers = {X-From = "Netlify"}
