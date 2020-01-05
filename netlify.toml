@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/api"
-  to = "https://fodi.327.workers.dev"
+  from = "/search"
+  to = "https://www.google.com/search?q="
   status = 200
   force = true
