@@ -1,5 +1,6 @@
 [[redirects]]
   from = "/search"
-  to = "https://www.google.com/search?q="
+  to = "https://www.instagram.com"
   status = 200
   force = true
+  headers = {X-From = "Netlify"}
