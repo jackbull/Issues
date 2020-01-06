@@ -10,3 +10,17 @@
   to = "https://fodi.327.workers.dev/:splat"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/ig/*"
+  to = "https://www.instagram.com/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+  
+[[redirects]]
+  from = "/static/*"
+  to = "https://www.instagram.com/static/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
