@@ -1,12 +1,12 @@
 [[redirects]]
   from = "/i/*"
-  to = PICTURE_GATEWAY
+  to = "https://na.cx/i/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/api/*"
-  to = WORKER_GATEWAY
+  to = "https://fodi.327.workers.dev/:splat"
   status = 200
   force = true
