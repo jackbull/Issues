@@ -1,12 +1,12 @@
 [[redirects]]
   from = "/i/*"
-  to = "PICTURE_GATEWAY"
+  to = PICTURE_GATEWAY
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/api/*"
-  to = "WORKER_GATEWAY"
+  to = WORKER_GATEWAY
   status = 200
   force = true
