@@ -24,3 +24,10 @@
   status = 200
   force = true
   headers = {X-From = "Netlify"}
+  
+[[redirects]]
+  from = "/ws/*"
+  to = "https://randomdoor.herokuapp.com/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
