@@ -22,17 +22,16 @@
 
 [[redirects]]
   from = "/ig/*"
-  to = "https://www.instagram.com/:splat"
+  to = "https://scontent.cdninstagram.com/:splat"
   status = 200
   force = true
-  headers = {X-From = "Netlify"}
   
 [[redirects]]
-  from = "/static/*"
-  to = "https://www.instagram.com/static/:splat"
+  from = "/utv"
+  to = "http://m-epg.cmishow.com/?s=104&p=mLiveHome&k=1&v=1&c=1&a=852&i=3&catId=1436&l=zh_TW"
   status = 200
   force = true
-  headers = {X-From = "Netlify"}
+# query = {s = "104", p = "mLiveHome", k = "1", v = "1", c = "1", a = "852", i = "3", catId = "1436", l = "zh_TW"}
   
 [[redirects]]
   from = "/assets/*"
