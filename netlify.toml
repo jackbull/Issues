@@ -34,6 +34,6 @@
   
 [[redirects]]
   from = "/assets/*"
-  to = "https://lihkg.com/assets/:splat"
+  to = "https://cdn.lihkg.com/assets/:splat"
   status = 200
   force = true
