@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Cache-Control" content="no-siteapp">
+        <meta http-equiv="Cache-Control" content="no-transform">
+        <meta name="applicable-device" content="pc,mobile">
+        <meta name="referrer" content="no-referrer">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>全球主机交流论坛 - 在线刷分</title>
+        <!-- @Origin: https://hostloc.iddddg.com/ -->
+        <link rel="dns-prefetch" href="//www.hostloc.com">
+        <link rel="icon" type="image/x-icon" href="//www.hostloc.com/favicon.ico">
+        <style type="text/css">
+            html, body {
+                width: 100%;
+                height: 95%;
+                margin: 0;
+                padding: 0;
+                font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
+                background-color: #242424;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            img {
+                display: none;
+            }
+
+            h1, h2, h3, #go {
+                text-align: center;
+            }
+
+            h3 a{
+            color: #eee;
+            text-decoration: none;
+            border-bottom: 1px solid #4a4a4a;
+            }
+        </style>
+    </head>
+    <body onload="change()">
+        <h1 style="color: #fff;">正在签到...</h1>
+        <h3 style="color: #fff; display: block;">双击页面以查看积分记录</h1>
+        <h3 style="color: #fff;"><a href="https://github.com/iddddg/hostloc">另有PHP自动刷分脚本</a></h1>
+        <div id="go"></div>
+        <script type="text/javascript">
+            // 禁用右键、快捷键
+            document.oncontextmenu = function () {
+                return false;
+            };
+            document.onkeydown = function () {
+                return false;
+            };
+            // 访问自己 -> 访问恩山
+            var img = document.createElement("img");
+            img.src = "https://www.right.com.cn/forum/";
+            //document.getElementById('go').appendChild(img);
+            // 为防止重复或不存在,访问20位
+            for (var i = 0; i < 20; i++) {
+                var img = document.createElement("img");
+                img.src = "https://hostloc.com/?" + Math.floor(Math.random() * 30000);
+                document.getElementById('go').appendChild(img);
+            }
+        
+            // 显示
+            function change() {
+                setTimeout(function () {
+                    document.getElementsByTagName('h1')[0].innerHTML = '签到完成';
+                    document.getElementsByTagName('h1')[0].style.color = '#FF4081'; //完成提示字体颜色
+                    document.getElementsByTagName('h1')[1].style.display = 'block';
+                }, 2000);
+            }
+        
+            // 双击跳转
+            document.body.ondblclick = function () {
+                window.location.href = 'https://hostloc.com/home.php?mod=spacecp&ac=credit&op=log&suboperation=creditrulelog';
+            };
+            // 移动端模拟双击跳转
+            var i = 0;
+            document.body.onclick = function () {
+                i++;
+                setTimeout(function () {
+                    i = 0;
+                }, 500);
+                if (i > 1) {
+                    i = 0;
+                    window.location.href = 'https://hostloc.com/home.php?mod=spacecp&ac=credit&op=log&suboperation=creditrulelog';
+                }
+            };
+        </script>
+    </body>
+</html>
