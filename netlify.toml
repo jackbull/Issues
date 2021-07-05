@@ -1,23 +1,5 @@
 [build]
   functions = "functions"
-  
-[[redirects]]
-  from = "/i/*"
-  to = "https://na.cx/i/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/api/*"
-  to = "https://fodi.327.workers.dev/:splat"
-  status = 200
-  force = true
-  
-[[redirects]]
-  from = "/jybsh/*"
-  to = "http://qq.server.trading/:splat"
-  status = 200
-  force = true
 
 [[redirects]]
   from = "/ig/*"
@@ -26,11 +8,11 @@
   force = true
   
 [[redirects]]
-  from = "/hot"
-  to = "https://lihkg.com/api_v2/thread/hot?cat_id=2&page=1&count=60&type=now"
+  from = "/thread/*"
+  to = "https://lihkg.com/api_v2/thread/:splat"
   status = 200
   force = true
-  headers = {user-agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4023.0 Safari/537.36 Edg/81.0.396.0", cookie = "__cfruid=f81a28dc42720758cab6a9d64fa96a38542c342c-1579783058; __cfduid=d9080392992cee3497e8d2adfea6d56df1579783059; PHPSESSID=scbajb7bmtl65n6e3mcf1t13t2; _ga=GA1.1.1373709648.1579783062; _gid=GA1.1.173966292.1579783062; _gat=1"}
+  headers = {user-agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36", Referer = "https://lihkg.com"}
   
 [[redirects]]
   from = "/assets/*"
